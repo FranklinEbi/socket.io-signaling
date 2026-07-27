@@ -2,7 +2,7 @@
   "name": "call-app-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
     "build": "tsc",
@@ -13,7 +13,6 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "express": "^5.2.1",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {

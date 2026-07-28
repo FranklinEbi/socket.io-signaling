@@ -1,6 +1,6 @@
 import type { Server } from "socket.io";
  
-let socketServer:Server|null
+let socketServer:Server|null 
 
 export function createSignaling(server:Server){
       socketServer=server

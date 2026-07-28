@@ -1,5 +1,15 @@
+import type { Server } from "socket.io";
+import { call } from "./call.js";
 import { createSignalling } from "./createSignaling.js";
-import { getServer } from "./createSignaling.js";
-export {createSignalling}
+import { answer } from "./receive.js";
+import { iceCandidate } from "./iceCandidate.js";
 
-const server = getServer()
+
+export function createSignallingServer(server:Server){
+    createSignalling(server)
+    return {
+        call,
+        answer,
+        iceCandidate
+    }
+}

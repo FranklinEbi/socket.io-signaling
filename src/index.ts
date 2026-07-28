@@ -1,5 +1,5 @@
-import { createSignaling } from "./createSignaling.js";
+import { createSignalling } from "./createSignaling.js";
 import { getServer } from "./createSignaling.js";
-export {createSignaling}
+export {createSignalling}
 
 const server = getServer()
